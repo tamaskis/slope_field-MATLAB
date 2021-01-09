@@ -1,4 +1,4 @@
-# `slope_field` [![View Intersection of Two Lines (line_intersection) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85288-intersection-of-two-lines-line_intersection)
+# `slope_field`
 
 Draws the slope field of a first-order, univariate, ordinary differential equation.
 
