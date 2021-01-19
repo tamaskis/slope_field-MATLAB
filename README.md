@@ -12,7 +12,7 @@ Draws the slope field of a first-order, univariate, ordinary differential equati
 ## Description
 
 `slope_field(f,[xmin,xmax],[ymin,ymax])` draws the slope field of a differential equation.
-- `f`: function handle for differential equation (i.e. <img src="https://latex.codecogs.com/svg.latex?dy/dx=f(x,y)" title="dy/dx=f(x,y)" />)
+- `f`: function handle for differential equation <img src="https://latex.codecogs.com/svg.latex?dy/dx=f(x,y)" title="dy/dx=f(x,y)" />
 - `[xmin,xmax]` and `[ymin,ymax]`: define the domain <img src="https://latex.codecogs.com/svg.latex?D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq&space;x\leq&space;x_{\mathrm{max}},y_{\mathrm{min}}\leq&space;y\leq&space;y_{\mathrm{max}}\right\}" title="D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq x\leq x_{\mathrm{max}},y_{\mathrm{min}}\leq y\leq y_{\mathrm{max}}\right\}" /> for which the slope field is drawn
 
 `slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width)` draws the slope field of a differential equation with additional formatting options.
