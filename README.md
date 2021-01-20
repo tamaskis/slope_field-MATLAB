@@ -13,14 +13,9 @@ Draws the slope field of a first-order, univariate, ordinary differential equati
 
 `slope_field(f,[xmin,xmax],[ymin,ymax])` draws the slope field of a differential equation <img src="https://latex.codecogs.com/svg.latex?dy&space;/&space;dx=f(x,y)" title="dy / dx=f(x,y)" /> , where `f` is the function handle of <img src="https://latex.codecogs.com/svg.latex?f(x,y)" title="f(x,y)" />, and where `[xmin,xmax]` and `[ymin,ymax]` define the domain <img src="https://latex.codecogs.com/svg.latex?D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq&space;x\leq&space;x_{\mathrm{max}},y_{\mathrm{min}}\leq&space;y\leq&space;y_{\mathrm{max}}\right\}" title="D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq x\leq x_{\mathrm{max}},y_{\mathrm{min}}\leq y\leq y_{\mathrm{max}}\right\}" /> over which the slope field is drawn.
 
-`slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width)` draws the slope field of a differential equation with additional formatting options.
-- `f`: function handle for differential equation (i.e. <img src="https://latex.codecogs.com/svg.latex?dy&space;/&space;dx=f(x,y)" title="dy / dx=f(x,y)" />)
-- `[xmin,xmax]` and `[ymin,ymax]`: define the domain <img src="https://latex.codecogs.com/svg.latex?D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq&space;x\leq&space;x_{\mathrm{max}},y_{\mathrm{min}}\leq&space;y\leq&space;y_{\mathrm{max}}\right\}" title="D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq x\leq x_{\mathrm{max}},y_{\mathrm{min}}\leq y\leq y_{\mathrm{max}}\right\}" /> for which the slope field is drawn
-- `density`: number of lines to draw in the horizontal (<img src="https://latex.codecogs.com/svg.latex?x" title="x" />) direction (effectively controls how many lines are drawn to create the slope field)
-- `color`: line color
-- `width`: line width
+`slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width)` draws the slope field of a differential equation <img src="https://latex.codecogs.com/svg.latex?dy&space;/&space;dx=f(x,y)" title="dy / dx=f(x,y)" /> , where `f` is the function handle of <img src="https://latex.codecogs.com/svg.latex?f(x,y)" title="f(x,y)" />, and where `[xmin,xmax]` and `[ymin,ymax]` define the domain <img src="https://latex.codecogs.com/svg.latex?D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq&space;x\leq&space;x_{\mathrm{max}},y_{\mathrm{min}}\leq&space;y\leq&space;y_{\mathrm{max}}\right\}" title="D=\left\{\left(x,y\right)|x_{\mathrm{min}}\leq x\leq x_{\mathrm{max}},y_{\mathrm{min}}\leq y\leq y_{\mathrm{max}}\right\}" /> over which the slope field is drawn. Additionally, `density` defines the number of lines to draw in the horizontal direction (effectively controlling how many lines are drawn to create the slope field), and `color` and `width` define the color and line width, respectively, of the lines.
 
-`fig = slope_field(__)` draws the slope field of a differential equation and also returns its figure handle. You can use any of the input arguments in the previous syntaxes.
+`fig = slope_field(__)` draws the slope field and also returns the figure handle of the slope field. You can use any of the input arguments in the previous syntaxes.
 
 
 ## Example
@@ -50,13 +45,13 @@ Plot the slope field with a line density of 25 and red lines with a line width o
     
 Add axes labels and a title.
 
-    xlabel("$x$",'interpreter','latex','fontsize',18);
-    ylabel("$y$",'interpreter','latex','fontsize',18);
-    title("Slope Field for $\displaystyle\frac{dy}{dx}=\frac{y}{x-3}$",'interpreter','latex','fontsize',20);
+    xlabel('$x$','interpreter','latex','fontsize',18);
+    ylabel('$y$','interpreter','latex','fontsize',18);
+    title('Slope Field for $\displaystyle\frac{dy}{dx}=\frac{y}{x-3}$','interpreter','latex','fontsize',20);
     
 We can plot the same slope field with the default settings.
 
     slope_field(f,[xmin,xmax],[ymin,ymax])
-    xlabel("$x$",'interpreter','latex','fontsize',18);
-    ylabel("$y$",'interpreter','latex','fontsize',18);
-    title("Slope Field for $\displaystyle\frac{dy}{dx}=\frac{y}{x-3}$",'interpreter','latex','fontsize',20);
+    xlabel('x$','interpreter','latex','fontsize',18);
+    ylabel('$y$','interpreter','latex','fontsize',18);
+    title('Slope Field for $\displaystyle\frac{dy}{dx}=\frac{y}{x-3}$','interpreter','latex','fontsize',20);
