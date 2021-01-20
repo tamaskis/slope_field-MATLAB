@@ -26,16 +26,8 @@
 % See https://github.com/tamaskis/slope_field-MATLAB for additional 
 % documentation and examples. Examples can also be found in EXAMPLE.m 
 % (included with download).
-
-
-
-%% Copyright (c) 2021 Tamas Kis
-
-% AUTHOR:
-% Tamas Kis
-
-% VERSION HISTORY:
-% v1.0.0.0: 9-Jan-2021, First version.
+%
+% Copyright (c) 2021 Tamas Kis
 
 
 
