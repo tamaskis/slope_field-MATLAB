@@ -2,26 +2,22 @@
 % differential equation.
 %
 %   slope_field(f,[xmin,xmax],[ymin,ymax]) draws the slope field of a
-%   differential equation.
-%       --> f: function handle for ODE - dy/dx = f(x,y)
-%       --> [xmin,xmax]: lower + upper bounds for independent var.
-%       --> [ymin,ymax]: lower + upper bounds for dependent variable
+%   differential equation dy/dx=f(x,y), where "f" is the function handle of
+%   f(x,y), and where "[xmin,xmax]" and "[ymin,ymax]" define the domain 
+%   over which the slope field is drawn.
 %
-%   slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width) draws the
-%   slope field of a differential equation with additional formatting
-%   options.
-%       --> f: function handle for ODE - dy/dx = f(x,y)
-%     	--> [xmin,xmax]: lower + upper bounds for independent var.
-%     	--> [ymin,ymax]: lower + upper bounds for dependent variable
-%    	--> density: number of lines to draw in horizontal (x) direction 
-%                    (effectively controls how many lines are drawn to 
-%                    create the slope field)
-%       --> color: color of lines
-%    	--> width: line width of lines
+%   slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width) draws the 
+%   slope field of a differential equation dy/dx=f(x,y), where "f" is the 
+%   function handle of f(x,y), and where "[xmin,xmax]" and "[ymin,ymax]" 
+%   define the domain over which the slope field is drawn. Additionally,
+%   "density" defines the number of lines to draw in the horizontal
+%   direction (effectively controlling how many lines are drawn to create
+%   the slope field), and color and width define the color and line width,
+%   respectively, of the lines.
 %
-%   fig = slope_field(__) draws the slope field of a differential equation 
-%   and also returns its figure handle. You can use any of the input 
-%   arguments in the previous syntaxes.
+%   fig = slope_field(__) draws the slope field and also returns the figure
+%   handle of the slope field. You can use any of the input arguments in
+%   the previous syntaxes.
 %
 % See https://github.com/tamaskis/slope_field-MATLAB for additional 
 % documentation and examples. Examples can also be found in EXAMPLE.m 
