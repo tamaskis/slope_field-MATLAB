@@ -19,11 +19,15 @@
 %   handle of the slope field. You can use any of the input arguments in
 %   the previous syntaxes.
 %
-% See https://github.com/tamaskis/slope_field-MATLAB for additional 
-% documentation and examples. Examples can also be found in EXAMPLE.m 
-% (included with download).
+% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85433-slope-field-generator-for-odes-slope_field
+% GitHub: https://github.com/tamaskis/slope_field-MATLAB
+%
+% See "DOCUMENTATION.pdf" for additional documentation and examples. 
+% Examples can also be found in EXAMPLES.m. Both of these files are 
+% included with the download.
 %
 % Copyright (c) 2021 Tamas Kis
+% Last Update: 2021-03-24
 
 
 
