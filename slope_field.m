@@ -1,45 +1,45 @@
+%==========================================================================
+%
 % slope_field  Draws the slope field of a first-order, univariate, ordinary
 % differential equation.
 %
-%   slope_field(f,[xmin,xmax],[ymin,ymax]) draws the slope field of a
-%   differential equation dy/dx=f(x,y), where "f" is the function handle of
-%   f(x,y), and where "[xmin,xmax]" and "[ymin,ymax]" define the domain 
-%   over which the slope field is drawn.
-%
-%   slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width) draws the 
-%   slope field of a differential equation dy/dx=f(x,y), where "f" is the 
-%   function handle of f(x,y), and where "[xmin,xmax]" and "[ymin,ymax]" 
-%   define the domain over which the slope field is drawn. Additionally,
-%   "density" defines the number of lines to draw in the horizontal
-%   direction (effectively controlling how many lines are drawn to create
-%   the slope field), and color and width define the color and line width,
-%   respectively, of the lines.
-%
-%   fig = slope_field(__) draws the slope field and also returns the figure
-%   handle of the slope field. You can use any of the input arguments in
-%   the previous syntaxes.
+%   slope_field(f,[xmin,xmax],[ymin,ymax])
+%   slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width)
+%   fig = slope_field(__)
 %
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85433-slope-field-generator-for-odes-slope_field
 % GitHub: https://github.com/tamaskis/slope_field-MATLAB
 %
-% See "DOCUMENTATION.pdf" for additional documentation and examples. 
-% Examples can also be found in EXAMPLES.m. Both of these files are 
-% included with the download.
+% See EXAMPLES.mlx (included with download) for examples.
 %
-% Copyright (c) 2021 Tamas Kis
-% Last Update: 2021-03-27
-
-
-
-%% FUNCTION
-
-% INPUT:  f - function handle for dy/dx = f(x,y)
-%         [xmin,xmax] - lower and upper bounds of independent variable
-%         [ymin,ymax] - lower and upper bounds of dependent variable
-%         density - line density (OPTIONAL)
-%         color - line color (OPTIONAL)
-%         width - line width (OPTIONAL)
-% OUTPUT: figure handle of slope field plot
+% Copyright © 2021 Tamas Kis
+% Last Update: 2021-06-08
+%
+%--------------------------------------------------------------------------
+%
+% -------
+% INPUTS:
+% -------
+%   f               - (function_handle) dy/dx = f(x,y)
+%   [xmin,xmax]     - (1×2) lower and upper bounds of independent variable
+%   [ymin,ymax]     - (1×2) lower and upper bounds of dependent variable
+%   density         - (OPTIONAL) (1×1) line density
+%   color           - (OPTIONAL) (1×3) [rgb] line color
+%   width           - (OPTIONAL) (1×1) line width
+%
+% --------
+% OUTPUTS:
+% --------
+%   fig             - (Figure) slope field plot
+%
+% -----
+% NOTE:
+% -----
+%   --> "density" defines the number of lines to draw in the horizontal
+%       direction (effectively controlling how many lines are drawn to
+%       create the slope field)
+%
+%==========================================================================
 function fig = slope_field(f,x_domain,y_domain,density,color,width)
     
     % sets default values of density, color, and width if not specified
