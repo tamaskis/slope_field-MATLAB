@@ -7,13 +7,15 @@
 %   slope_field(f,[xmin,xmax],[ymin,ymax],density,color,width)
 %   fig = slope_field(__)
 %
+% Copyright © 2021 Tamas Kis
+% Last Update: 2021-06-09
+%
+%--------------------------------------------------------------------------
+%
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85433-slope-field-generator-for-odes-slope_field
 % GitHub: https://github.com/tamaskis/slope_field-MATLAB
 %
 % See EXAMPLES.mlx (included with download) for examples.
-%
-% Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-08
 %
 %--------------------------------------------------------------------------
 %
