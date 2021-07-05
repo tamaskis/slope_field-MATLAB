@@ -9,7 +9,7 @@
 %
 % Copyright © 2021 Tamas Kis
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-04
+% Last Update: 2021-07-05
 %
 %--------------------------------------------------------------------------
 %
@@ -20,9 +20,9 @@
 %
 %--------------------------------------------------------------------------
 %
-% -------
-% INPUTS:
-% -------
+% ------
+% INPUT:
+% ------
 %   f               - (function_handle) dy/dx = f(x,y)
 %   [xmin,xmax]     - (1×2) lower and upper bounds of independent variable
 %   [ymin,ymax]     - (1×2) lower and upper bounds of dependent variable
@@ -30,9 +30,9 @@
 %   color           - (OPTIONAL) (1×3) [rgb] line color
 %   width           - (OPTIONAL) (1×1) line width
 %
-% --------
-% OUTPUTS:
-% --------
+% -------
+% OUTPUT:
+% -------
 %   fig             - (Figure) slope field plot
 %
 % -----
