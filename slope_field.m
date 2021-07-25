@@ -8,15 +8,9 @@
 %   fig = slope_field(__)
 %
 % Copyright © 2021 Tamas Kis
+% Last Update: 2021-07-26
+% Website: tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-05
-%
-%--------------------------------------------------------------------------
-%
-% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85433-slope-field-generator-for-odes-slope_field
-% GitHub: https://github.com/tamaskis/slope_field-MATLAB
-%
-% See EXAMPLES.mlx (included with download) for examples.
 %
 %--------------------------------------------------------------------------
 %
