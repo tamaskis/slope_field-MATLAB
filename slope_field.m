@@ -8,8 +8,8 @@
 %   fig = slope_field(__)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-07-26
-% Website: tamaskis.github.io
+% Last Update: 2021-08-28
+% Website: https://tamaskis.github.io/
 % Contact: tamas.a.kis@outlook.com
 %
 %--------------------------------------------------------------------------
@@ -17,17 +17,19 @@
 % ------
 % INPUT:
 % ------
-%   f               - (function_handle) dy/dx = f(x,y)
-%   [xmin,xmax]     - (1×2) lower and upper bounds of independent variable
-%   [ymin,ymax]     - (1×2) lower and upper bounds of dependent variable
-%   density         - (OPTIONAL) (1×1) line density
-%   color           - (OPTIONAL) (1×3) [rgb] line color
-%   width           - (OPTIONAL) (1×1) line width
+%   f           - (function_handle) dy/dx = f(x,y)
+%   [xmin,xmax]	- (1×2 double) lower and upper bounds of independent var.
+%   [ymin,ymax] - (1×2 double) lower and upper bounds of dependent variable
+%   density    	- (OPTIONAL) (1×1 double) line density
+%   color    	- (OPTIONAL) (1×3 double) line color
+%                   --> can be specified as a name, short name, or RGB 
+%                       triplet [rgb]
+%   width    	- (OPTIONAL) (1×1 double) line width
 %
 % -------
 % OUTPUT:
 % -------
-%   fig             - (Figure) slope field plot
+%   fig 	- (Figure) slope field plot
 %
 % -----
 % NOTE:
