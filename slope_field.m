@@ -8,7 +8,7 @@
 %   fig = slope_field(__)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-08-28
+% Last Update: 2022-07-05
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -74,33 +74,36 @@ function fig = slope_field(f,x_domain,y_domain,density,color,width)
             
             % initially assumes the slope will not be indeterminate
             indeterminate = false;
-
+            
             % calculates slope and avoids division by 0 errors
             try
                 slope = f(x(i),y(j));
             catch
                 indeterminate = true;
             end
-
+            
             % angle formed by slope
             if indeterminate
                 angle = pi/2;
             else
                 angle = atan(slope);
             end
-
+            
             % calculates components of line
-            dx = L*cos(angle)/2;
-            dy = L*sin(angle)/2;
-
-            % plots line (but only if slope is real)
             if isreal(slope)
-                plot([x(i)-dx,x(i)+dx],[y(j)-dy,y(j)+dy],'color',color,...
-                'linewidth',width);
+                dx = L*cos(angle)/2;
+                dy = L*sin(angle)/2;
+            else
+                dx = 0;
+                dy = L/2;
             end
+            
+            % plots line
+            plot([x(i)-dx,x(i)+dx],[y(j)-dy,y(j)+dy],'Color',color,...
+                'LineWidth',width);
             
         end
     end
     hold off;
-
+    
 end
